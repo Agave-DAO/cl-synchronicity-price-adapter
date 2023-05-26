@@ -23,3 +23,4 @@ deploy-wstETH-polygon :; forge script scripts/DeployWstETHAdapterPolygon.s.sol:D
 deploy-maticx-polygon :; forge script scripts/DeployMaticAdapterPolygon.s.sol:DeployMaticXAdapterPolygon --rpc-url polygon --broadcast --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify -vvvv
 deploy-stmatic-polygon :; forge script scripts/DeployMaticAdapterPolygon.s.sol:DeployStMaticAdapterPolygon --rpc-url polygon --broadcast --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify -vvvv
 
+deploy-wstETH-gnosis :; forge script scripts/DeployWstETHAdapterGnosis.s.sol:DeployWstETHGnosis --rpc-url gnosis --broadcast --verify --etherscan-api-key ${ETHERSCAN_API_KEY_GNOSIS} -vvvv
