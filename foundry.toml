@@ -5,6 +5,7 @@ script = 'scripts'
 out = 'out'
 libs = ['lib']
 remappings = []
+runs = 5000
 
 [rpc_endpoints]
 mainnet = "${RPC_MAINNET}"
